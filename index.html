@@ -1,7 +1,152 @@
-<!-- Snowfall Background Animation -->
-<section class="animated-background">
-    <div id="stars1"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-</section>
-<!-- End of Snowfall Background Animation -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Alchemico dei Resti Umani</title>
+    <style>
+        @font-face {
+            font-family: 'Times New Roman-like'; /* Simplified font name */
+            src: url('path/to/your/font.woff2') format('woff2'); /* Replace with the actual font file if available */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0e8; /* Light background color matching the image */
+            font-family: 'Times New Roman', Times, serif;
+            color: #d8d8d8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card-container {
+            width: 90%;
+            max-width: 400px;
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo-circle {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #d8d8d8;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="dots" width="2" height="2" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.5" fill="%23d8d8d8" /></pattern></defs><circle cx="50" cy="50" r="49" stroke="%23d8d8d8" fill="url(%23dots)" stroke-width="1.5"/></svg>');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .title {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d8d8d8;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+            color: #d8d8d8;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #555;
+            margin: 30px 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu li a {
+            color: #d8d8d8;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #d8d8d8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                padding: 30px 15px;
+            }
+
+            .logo-circle {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 12px;
+            }
+
+            .nav-menu li a,
+            .contact-info {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="logo-circle"></div>
+        <h1 class="title">LABORATORIO<br>ALCHEMICO<br>DEI RESTI UMANI</h1>
+        <p class="subtitle">SPAZI VIVI TRA VISIBILE E INVISIBILE</p>
+        <hr>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">SITO</a></li>
+                <li><a href="#">INFO</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="contact-info">
+            <p><a href="mailto:ing.bagheri@gmail.com">ing.bagheri@gmail.com</a></p>
+            <p><a href="tel:+393336645879">+39 333 6645879</a></p>
+            <p><a href="http://laboratorioalchemicoresti.it" target="_blank">laboratorioalchemicoresti.it</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

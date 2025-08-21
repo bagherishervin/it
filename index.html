@@ -2,158 +2,133 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shervin Bagheri</title>
+    <meta name="viewport" content="width=375, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <title>Ing. Bagheri Shervin</title>
     <style>
-        @font-face {
-            font-family: 'Times New Roman-like'; /* Simplified font name */
-            src: url('path/to/your/font.woff2') format('woff2'); /* Replace with the actual font file if available */
-            font-weight: normal;
-            font-style: normal;
-        }
-
         body {
+            font-family: serif;
+            background-color: #000;
             margin: 0;
-            padding: 0;
-            background-color: #f0f0e8; /* Light background color matching the image */
-            
-            background-image:url('https://pixnio.com/free-images/2021/10/15/2021-10-15-09-14-11.jpg');
-            background-repeat: repeat-x;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            
-            font-family: 'Times New Roman', Times, serif;
-            color: #d8d8d8;
+            padding: 20px;
+            color: #E0E0E0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            align-items: flex-start;
         }
 
-        .card-container {
-            width: 90%;
-            max-width: 400px;
-            background-color: #1a1a1a;
-            padding: 40px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
+        .card {
+            width: 335px;
+            background-color: #212121;
+            padding: 30px 20px;
             box-sizing: border-box;
+            text-align: center;
+            margin-top: 30px; /* Aggiunto per spostare il riquadro in basso */
         }
 
-        .logo-circle {
-            width: 100px;
-            height: 100px;
-            border: 1px solid #d8d8d8;
-            border-radius: 50%;
+        .circle {
+            width: 75px;
+            height: 75px;
             margin: 0 auto 30px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="dots" width="2" height="2" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.5" fill="%23d8d8d8" /></pattern></defs><circle cx="50" cy="50" r="49" stroke="%23d8d8d8" fill="url(%23dots)" stroke-width="1.5"/></svg>');
-            background-size: cover;
+            background-image: url('your_circle_image_url.png');
+            background-size: contain;
             background-repeat: no-repeat;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            line-height: 1.2;
+            background-position: center;
         }
 
         .title {
-            font-size: 24px;
+            font-size: 25px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #d8d8d8;
+            letter-spacing: 2px;
+            margin: 0;
+            line-height: 1.2;
+            color: #FFFFFF;
         }
 
         .subtitle {
-            font-size: 14px;
-            margin-top: 15px;
-            letter-spacing: 0.5px;
-            color: #d8d8d8;
+            font-size: 19px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
         }
 
-        hr {
-            border: none;
+        .tagline {
+            font-size: 13px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            color: #BDBDBD;
+        }
+
+        .divider {
             height: 1px;
             background-color: #555;
-            margin: 30px 0;
+            width: 80%;
+            margin: 0 auto 20px;
         }
 
-        .nav-menu {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 40px;
             display: flex;
             justify-content: space-around;
-            list-style: none;
-            padding: 0;
-            margin: 0;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .nav-menu li a {
-            color: #d8d8d8;
+        nav a {
+            color: #BDBDBD;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            transition: color 0.3s;
         }
 
-        .contact-info {
-            margin-top: 40px;
+        nav a:hover {
+            color: #FFFFFF;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            color: #E0E0E0;
             font-size: 16px;
-            line-height: 1.6;
         }
 
-        .contact-info a {
-            color: #d8d8d8;
+        .contact-info .website {
             text-decoration: none;
-        }
-
-        @media (max-width: 768px) {
-            .card-container {
-                padding: 30px 15px;
-            }
-
-            .logo-circle {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 20px;
-            }
-
-            .title {
-                font-size: 20px;
-            }
-
-            .subtitle {
-                font-size: 12px;
-            }
-
-            .nav-menu li a,
-            .contact-info {
-                font-size: 14px;
-            }
+            color: #E0E0E0;
         }
     </style>
 </head>
 <body>
 
-    <div class="card-container">
-        <div class="logo-circle"></div>
-        <h1 class="title">SHERVIN<br>BAGHERI</h1>
-        <p class="subtitle">INGEGNERIA - ARCHITETTURA</p>
-        <hr>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">SITO</a></li>
-                <li><a href="#">INFO</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <div class="contact-info">
-            <p><a href="mailto:ing.bagheri@gmail.com">ing.bagheri@gmail.com</a></p>
-            <p><a href="tel:+393336645879">+39 333 6645879</a></p>
-            <p><a href="https://bagherishervin.github.io/it/" target="_blank">bagherishervin.github.io/it</a></p>
-        </div>
+<div class="card">
+    <div class="circle"></div>
+
+    <p class="title">ING.SHERVIN</p>
+    <p class="subtitle">BAGHERI</p>
+
+    <p class="tagline">SPAZI VIVI TRA VISIBILE E INVISIBILE</p>
+
+    <div class="divider"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">SITO</a></li>
+            <li><a href="#">INFO</a></li>
+        </ul>
+    </nav>
+    
+    <div class="contact-info">
+        <p class="email">ing.bagheri@gmail.com</p>
+        <p class="phone">+39 333 6645879</p>
+        <p><a class="website" href="https://bagherishervin.github.io/it/">bagherishervin.github.io/it</a></p>
     </div>
+</div>
 
 </body>
 </html>
